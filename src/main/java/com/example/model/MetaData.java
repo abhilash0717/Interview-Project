@@ -1,7 +1,12 @@
 package com.example.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.Instant;
 
+@Getter
+@Setter
 public class MetaData {
 
     private String documentId;
