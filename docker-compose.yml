@@ -11,3 +11,9 @@ services:
       - "8080:8080"
     environment:
       SPRING_PROFILES_ACTIVE: docker
+    networks:
+      - kafka-net
+
+networks:
+  kafka-net:
+    external: true
